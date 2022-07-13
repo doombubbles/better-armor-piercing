@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net48</TargetFramework>
         <RootNamespace>BetterArmorPiercing</RootNamespace>
         <Configurations>Debug;Release</Configurations>
         <Nullable>enable</Nullable>
         <AssemblyName>BetterArmorPiercing</AssemblyName>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
     
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,19 +18,5 @@
         <DebugType>none</DebugType>
     </PropertyGroup>
 
-    <ItemGroup>
-        <Using Remove="System" />
-        <Using Remove="System.IO" />
-        <Using Remove="System.Linq" />
-        <Using Remove="System.Net.Http" />
-        <Using Remove="System.Threading" />
-        <Using Remove="System.Threading.Tasks" />
-        <Using Remove="System.Collections.Generic" />
-    </ItemGroup>
-    
     <Import Project="..\btd6.targets" />
-    <ItemGroup>
-        <Reference Include="$(BloonsTD6)\Mods\BloonsTD6 Mod Helper.dll" />
-    </ItemGroup>
-
 </Project>

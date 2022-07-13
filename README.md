@@ -2,7 +2,7 @@
 
 # Better Armor Piercing
 
-## NOTE: This version of the mod requires BTD6 Mod Helper >v3.0 and MelonLoader >v0.6
+## NOTE: This alpha version of the mod requires BTD6 Mod Helper >v3.0, see [here](https://github.com/doombubbles/BTD6-Mods#readme) for the stable mods
 
 This mod makes the x/x/4 Armor Piercing Darts upgrade for the Monkey Sub actually live up to its name by allowing the tower to pop Lead Bloons.
 
