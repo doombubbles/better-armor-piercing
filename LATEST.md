@@ -1,1 +1,1 @@
-- Updated for Mod Helper 3.0
+- Recompile for v32.0
