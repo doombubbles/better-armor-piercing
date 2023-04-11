@@ -1,13 +1,14 @@
 ﻿using System.Linq;
-using Assets.Scripts.Models;
-using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Mods;
+using Il2CppAssets.Scripts.Models;
+using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Mods;
 using BetterArmorPiercing;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Helpers;
 using BTD_Mod_Helper.Api.ModOptions;
 using BTD_Mod_Helper.Extensions;
+using Il2Cpp;
 using Il2CppSystem.Collections.Generic;
 using MelonLoader;
 
