@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using Il2CppAssets.Scripts.Models;
 using Il2CppAssets.Scripts.Models.Towers;
-using Il2CppAssets.Scripts.Models.Towers.Mods;
 using BetterArmorPiercing;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Enums;
@@ -9,7 +8,6 @@ using BTD_Mod_Helper.Api.Helpers;
 using BTD_Mod_Helper.Api.ModOptions;
 using BTD_Mod_Helper.Extensions;
 using Il2Cpp;
-using Il2CppSystem.Collections.Generic;
 using MelonLoader;
 
 [assembly:
@@ -36,10 +34,10 @@ public class BetterArmorPiercingMod : BloonsTD6Mod
         icon = VanillaSprites.HeatTippedDartUpgradeIcon
     };
 
-    public override void OnNewGameModel(GameModel gameModel, List<ModModel> mods)
+    public override void OnNewGameModel(GameModel gameModel)
     {
         gameModel.GetUpgrade(UpgradeType.ArmorPiercingDarts).cost =
-            CostHelper.CostForDifficulty(ArmorPiercingDartsCost, mods);
+            CostHelper.CostForDifficulty(ArmorPiercingDartsCost, gameModel);
 
         foreach (var towerModel in gameModel.GetTowersWithBaseId(TowerType.MonkeySub)
                      .Where(model => model.appliedUpgrades.Contains(UpgradeType.ArmorPiercingDarts)))
